@@ -1,6 +1,13 @@
 build_kit:
-  name: python3
-  version: latest
+  arch: ["arm"]
+  file: file://build_kit/nvidia-jetson-csi-camera.nvcr.io.dockerfile
+
+needs_priveledge: true
+
+peripheral_requirements:
+  - name: GPU
+    peripheral_type: GPU
+
 outbound_topics:
-  - name: HELLO_WORLD_MESSAGE
-    message_type: make87_messages.text.text_plain.PlainText
+  - name: IMAGE_DATA
+    message_type: make87_messages.image.compressed.image_jpeg.ImageJPEG

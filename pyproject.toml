@@ -3,11 +3,12 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "app"
+name = "nvidia-jetson-csi-camera-to-jpeg-node"
 version = "0.0.1"
 dependencies = [
   "make87",
   "make87_messages",
+  "opencv-python-headless",
 ]
 description = "A small example package"
 readme = "README.md"

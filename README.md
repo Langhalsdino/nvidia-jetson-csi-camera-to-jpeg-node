@@ -1,1 +1,1 @@
-# Publisher Template for Python
+# NVIDIA Jetson CSI Camera to JPEG Publisher
