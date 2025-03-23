@@ -1,6 +1,6 @@
 build_kit:
-  arch: ["arm"]
-  file: file://build_kit/nvidia-jetson-csi-camera.nvcr.io.dockerfile
+  target_architectures: [arm64]
+  name: file://build_kit/nvidia-jetson-csi-camera.nvcr.io.dockerfile
 
 needs_priveledge: true
 
