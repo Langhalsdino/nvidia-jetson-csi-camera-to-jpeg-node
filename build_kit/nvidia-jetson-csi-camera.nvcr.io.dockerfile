@@ -6,7 +6,7 @@ WORKDIR /app
 # Copy the project files into the container (adjust if needed)
 COPY . .
 
-ENTRYPOINT ["/make87/venv/bin/python3", "-m", "app.main"]  
+ENTRYPOINT ["python3", "-m", "app.main"]  
 
 # Default command, adjust as needed
 CMD ["/app/main"]
