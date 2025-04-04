@@ -27,3 +27,4 @@ COPY . .
 
 # Use the virtual environment's python to run your application
 ENTRYPOINT ["${VIRTUAL_ENV}/bin/python3", "-m", "app.main"]
+
